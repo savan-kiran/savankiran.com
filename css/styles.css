@@ -4,6 +4,9 @@
     --title-logo-height: 160px;
     --title-logo-margin: 10px;
     --primary-nav-bar-height: 40px;
+    --title-text-color: rgb(242, 242, 242);
+    --sub-title-text-color: rgb(212, 212, 212);
+    --title-div-bg-color: rgb(40, 40, 40);
 }
 
 * {
@@ -14,11 +17,12 @@
 
 body {
     margin: 0;
-    background-color: rgba(128, 203, 255, 1);
+    background-color: white;
 }
 
 .title_div {
-    background-color: rgba(255, 255, 255, 0.71);
+    /*noinspection CssInvalidFunction*/
+    background-color: var(--title-div-bg-color);
     padding-left: 27.64%;
     padding-right: 27.64%;
     overflow: auto;
@@ -56,7 +60,8 @@ body {
 
 .title_text {
     text-align: left;
-    color: darkslategrey;
+    /*noinspection CssInvalidFunction*/
+    color: var(--title-text-color);
     font-size: 60px;
     font-family: "Arial Black";
     margin: 0px;
@@ -64,14 +69,16 @@ body {
 
 .subtitle_text {
     text-align: left;
-    color: lightslategray;
+    /*noinspection CssInvalidFunction*/
+    color: var(--sub-title-text-color);
     font-size: 20px;
     font-family: "Arial";
     margin: 0px;
 }
 
 .primary_nav_bar {
-    background-color: indianred;
+    /*noinspection CssInvalidFunction*/
+    background-color: var(--sub-title-text-color);
     list-style-type: none;
     margin-left: 27.64%;
     margin-right: 27.64%;
@@ -93,7 +100,8 @@ body {
 .primary_nav_bar_item_a {
     display: block;
     padding: 8px;
-    color: white;
+    /*noinspection CssInvalidFunction*/
+    color: var(--title-div-bg-color);
     text-align: center;
     text-decoration: none;
     /*noinspection CssInvalidFunction*/
@@ -101,7 +109,10 @@ body {
 }
 
 .primary_nav_bar_item_a:hover {
-    background-color: gold;
+    /*noinspection CssInvalidFunction*/
+    background-color: var(--title-div-bg-color);
+    /*noinspection CssInvalidFunction*/
+    color: var(--sub-title-text-color);
     /*noinspection CssInvalidFunction*/
     height: var(--primary-nav-bar-height);
 }
@@ -109,10 +120,12 @@ body {
 .primary_nav_bar_item_a_active {
     display: block;
     padding: 8px;
-    color: white;
     text-align: center;
     text-decoration: none;
-    background-color: gold;
+    /*noinspection CssInvalidFunction*/
+    color: var(--sub-title-text-color);
+    /*noinspection CssInvalidFunction*/
+    background-color: var(--title-div-bg-color);
     /*noinspection CssInvalidFunction*/
     height: var(--primary-nav-bar-height);
 }
@@ -180,7 +193,7 @@ body {
 
 .content_area_div {
     margin: 0;
-    background-color: aliceblue;
+    background-color: white;
     padding: 10px;
     position: relative;
     left: 27.64%;

@@ -119,12 +119,27 @@ abstract class Page
     {
         /** Configure generic views */
         $this->setupViews();
-
+        /** Render views */
+        ?>
+        <html>
+        <body>
+        <?php
         /** Render views */
         $this->head_view->render();
         $this->secondary_nav_bar->render();
         $this->tree_view->render();
         $this->title_view->render();
         $this->primary_nav_bar->render();
+        $this->render();
+        ?>
+        </body>
+        </html>
+        <?php
     }
+
+    /**
+     * To be overridden by extending pages to render their own content after basic outline
+     * @return mixed
+     */
+    abstract function render();
 }

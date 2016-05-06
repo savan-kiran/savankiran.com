@@ -14,7 +14,7 @@ class PageConfig
 
     static $SITE_PRIMARY_NAVIGATION_BAR = array(
         array('Home', 'home', HomePage::class),
-        array('Poems', 'poems', PoemsPage::class),
-        array('Resume', 'resume', ResumePage::class)
+        array('Resume', 'resume', ResumePage::class),
+        array('Poems', 'poems', PoemsPage::class)
     );
 }
