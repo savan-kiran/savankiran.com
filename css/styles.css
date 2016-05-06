@@ -1,0 +1,189 @@
+:root {
+    --title-height: 160px;
+    --title-logo-width: 160px;
+    --title-logo-height: 160px;
+    --title-logo-margin: 10px;
+    --primary-nav-bar-height: 40px;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(128, 203, 255, 1);
+}
+
+.title_div {
+    background-color: rgba(255, 255, 255, 0.71);
+    padding-left: 27.64%;
+    padding-right: 27.64%;
+    overflow: auto;
+    position: relative;
+}
+
+.title_logo_div {
+    /*noinspection CssInvalidFunction*/
+    width: var(--title-logo-width);
+    /*noinspection CssInvalidFunction*/
+    height: var(--title-logo-height);
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    /*noinspection CssInvalidFunction*/
+    margin: var(--title-logo-margin);
+    float: left;
+}
+
+.title_text_div {
+    margin: auto;
+    /*noinspection CssInvalidFunction*/
+    padding-top: calc(var(--title-height) / 2.618);
+}
+
+.logo {
+    display: block;
+    /*noinspection CssInvalidFunction*/
+    max-width: var(--title-logo-width);
+    /*noinspection CssInvalidFunction*/
+    max-height: var(--title-logo-width);
+    width: auto;
+    height: auto;
+}
+
+.title_text {
+    text-align: left;
+    color: darkslategrey;
+    font-size: 60px;
+    font-family: "Arial Black";
+    margin: 0px;
+}
+
+.subtitle_text {
+    text-align: left;
+    color: lightslategray;
+    font-size: 20px;
+    font-family: "Arial";
+    margin: 0px;
+}
+
+.primary_nav_bar {
+    background-color: indianred;
+    list-style-type: none;
+    margin-left: 27.64%;
+    margin-right: 27.64%;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: relative;
+    width: 44.72%;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.primary_nav_bar_item {
+    display: inline;
+    float: left;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.primary_nav_bar_item_a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.primary_nav_bar_item_a:hover {
+    background-color: gold;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.primary_nav_bar_item_a_active {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: gold;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.secondary_nav_bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*noinspection CssInvalidFunction*/
+    padding-top: calc(var(--title-height) + (2*var(--title-logo-margin)) + var(--primary-nav-bar-height));
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 27.64%;
+}
+
+.secondary_nav_bar_item {
+    display: block;
+}
+
+.secondary_nav_bar_item_a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.secondary_nav_bar_item_a:hover {
+    background-color: #3282e6;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.secondary_nav_bar_item_a_active {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3282e6;
+    /*noinspection CssInvalidFunction*/
+    height: var(--primary-nav-bar-height);
+}
+
+.tree_div {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 72.36%;
+    height: 100%;
+    width: 27.64%;
+}
+
+.tree_canvas {
+    height: 100%;
+    width: 100%;
+    border: 3px dotted black;
+}
+
+.content_area_div {
+    margin: 0;
+    background-color: aliceblue;
+    padding: 10px;
+    position: relative;
+    left: 27.64%;
+    height: 100%;
+    width: 44.72%;
+}
