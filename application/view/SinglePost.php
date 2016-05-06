@@ -11,7 +11,7 @@ abstract class SinglePost extends View
     function render()
     {
         ?>
-        <div class="content_area_div">
+        <div class="single_post_content_area_div">
             <?php
             $this->render_post();
             ?>

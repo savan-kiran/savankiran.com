@@ -41,7 +41,7 @@ class HomePage extends Page
         $this->home_post->setContent($this->content);
     }
 
-    function render()
+    function render_page()
     {
         /** Configure views */
         $this->setupViews();

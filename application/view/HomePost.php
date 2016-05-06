@@ -30,7 +30,6 @@ class HomePost extends SinglePost
 
     function render_post()
     {
-
     }
 
 }

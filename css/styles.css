@@ -7,6 +7,7 @@
     --title-text-color: rgb(242, 242, 242);
     --sub-title-text-color: rgb(212, 212, 212);
     --title-div-bg-color: rgb(40, 40, 40);
+    --single-post-content-div-bg-color: white;
 }
 
 * {
@@ -80,10 +81,9 @@ body {
     /*noinspection CssInvalidFunction*/
     background-color: var(--sub-title-text-color);
     list-style-type: none;
-    margin-left: 27.64%;
-    margin-right: 27.64%;
-    margin-bottom: 0;
-    margin-top: 0;
+    left: 27.64%;
+    margin: 0;
+    padding: 0;
     position: relative;
     width: 44.72%;
     /*noinspection CssInvalidFunction*/
@@ -191,12 +191,15 @@ body {
     border: 3px dotted black;
 }
 
-.content_area_div {
-    margin: 0;
-    background-color: white;
+.single_post_content_area_div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    /*noinspection CssInvalidFunction*/
+    background-color: var(--title-div-bg-color);
     padding: 10px;
     position: relative;
     left: 27.64%;
-    height: 100%;
+    height: auto;
     width: 44.72%;
+    border-radius: 10px;
 }

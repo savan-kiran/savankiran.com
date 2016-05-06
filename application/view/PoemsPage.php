@@ -13,9 +13,9 @@ class PoemsPage extends Page
         parent::__construct(PoemsPage::class);
     }
 
-    function render()
+    function render_page()
     {
-        
+
     }
 
 }

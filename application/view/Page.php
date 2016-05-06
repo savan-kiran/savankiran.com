@@ -130,7 +130,7 @@ abstract class Page
         $this->tree_view->render();
         $this->title_view->render();
         $this->primary_nav_bar->render();
-        $this->render();
+        $this->render_page();
         ?>
         </body>
         </html>
@@ -141,5 +141,5 @@ abstract class Page
      * To be overridden by extending pages to render their own content after basic outline
      * @return mixed
      */
-    abstract function render();
+    abstract function render_page();
 }

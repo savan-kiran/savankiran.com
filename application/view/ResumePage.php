@@ -16,7 +16,7 @@ class ResumePage extends Page
         $this->resume_post = new ResumePost();
     }
 
-    function render()
+    function render_page()
     {
         $this->resume_post->render();
     }
