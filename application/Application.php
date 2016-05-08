@@ -90,12 +90,14 @@ class Application {
         }
 
         $controller = ucwords($controller);
-        $controller_obj = new $controller();
+        if(class_exists($controller)) {
+            $controller_obj = new $controller();
 
-        if ((int)method_exists($controller, $action)) {
-            call_user_func_array(array($controller_obj, $action), $query_string);
-        } else {
-            /* Error Generation Code Here */
+            if ((int)method_exists($controller, $action)) {
+                call_user_func_array(array($controller_obj, $action), $query_string);
+            } else {
+                /* Error Generation Code Here */
+            }
         }
     }
 

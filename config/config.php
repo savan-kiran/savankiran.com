@@ -9,9 +9,9 @@
 define ('DEBUG', true);
 
 // Database connection
-define('DB_NAME', 'dbname');
+define('DB_NAME', 'test');
 define('DB_USER', 'root');
-define('DB_PASSWORD', 'dreamon');
+define('DB_PASSWORD', '****');
 define('DB_HOST', 'localhost');
 
 // Website URL and path

@@ -23,8 +23,6 @@ function __autoload($className) {
         require_once(ROOT . DS . 'application' . DS . 'model' . DS . $className . '.php');
     } else if(file_exists(ROOT . DS . 'application' . DS . 'view' . DS . $className . '.php')) {
         require_once(ROOT . DS . 'application' . DS . 'view' . DS . $className . '.php');
-    } else if (file_exists(ROOT . DS . 'core' . DS . 'sql.php')) {
-        require_once(ROOT . DS . 'core' . DS . 'sql.php');
     }
 }
 

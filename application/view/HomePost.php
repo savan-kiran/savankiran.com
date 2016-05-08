@@ -30,6 +30,7 @@ class HomePost extends SinglePost
 
     function render_post()
     {
+        echo $this->content;
     }
 
 }
