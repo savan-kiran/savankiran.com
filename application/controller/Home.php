@@ -21,7 +21,7 @@ class Home extends Controller
     public function defaultAction($queryString = '')
     {
         parent::defaultAction($queryString);
-        $this->home_page->setContent($this->home_model->getContent());
+        $this->home_page->setContent($this->home_model->getIntroduction());
         $this->home_page->show();
     }
 

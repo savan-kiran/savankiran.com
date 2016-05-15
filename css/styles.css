@@ -6,7 +6,7 @@
     --primary-nav-bar-height: 40px;
     --title-text-color: rgb(242, 242, 242);
     --sub-title-text-color: rgb(212, 212, 212);
-    --title-div-bg-color: rgb(40, 40, 40);
+    --title-div-bg-color: rgba(52, 52, 52, 1);
 }
 
 * {
@@ -127,7 +127,7 @@ body {
     font-weight: normal;
     font-variant: normal;
     text-align: center;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
@@ -155,7 +155,7 @@ body {
     font-weight: normal;
     font-variant: normal;
     text-align: center;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
     text-decoration: none;
 }
 
@@ -180,28 +180,58 @@ body {
 .secondary_nav_bar_item_a {
     display: block;
     padding: 8px;
-    color: white;
-    text-align: right;
-    text-decoration: none;
+    /*noinspection CssInvalidFunction*/
+    color: var(--title-div-bg-color);
     /*noinspection CssInvalidFunction*/
     height: var(--primary-nav-bar-height);
+    font-family: "Garamond", "Geneva", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .secondary_nav_bar_item_a:hover {
-    background-color: #3282e6;
     /*noinspection CssInvalidFunction*/
     height: var(--primary-nav-bar-height);
+    /*noinspection CssInvalidFunction*/
+    color: var(--title-div-bg-color);
+    /*noinspection CssInvalidFunction*/
+    border-color: var(--title-div-bg-color);
+    border-style: solid;
+    border-width: medium;
+    font-family: "Garamond", "Geneva", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .secondary_nav_bar_item_a_active {
     display: block;
     padding: 8px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    background-color: #3282e6;
+    /*noinspection CssInvalidFunction*/
+    color: var(--title-div-bg-color);
     /*noinspection CssInvalidFunction*/
     height: var(--primary-nav-bar-height);
+    /*noinspection CssInvalidFunction*/
+    border-color: var(--title-div-bg-color);
+    border-style: solid;
+    border-width: medium;
+    font-family: "Garamond", "Geneva", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    text-decoration: none;
 }
 
 .tree_div {
@@ -235,14 +265,12 @@ body {
     border-color: var(--title-div-bg-color);
     border-style: dotted;
     border-width: medium;
-    font-family: "Marlett", "Geneva", sans-serif;
-    font-size: 16px;
-    /*noinspection CssInvalidFunction*/
-    color: var(--title-div-bg-color/*--title-text-color*/);
+    font-family: "Garamond", "Geneva", sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-align: left;
-    letter-spacing: 0px;
-    line-height: 22px;
+    letter-spacing: 1px;
+    text-decoration: none;
 }

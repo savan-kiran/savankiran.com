@@ -1,0 +1,28 @@
+.writings_title {
+    /*noinspection CssInvalidFunction*/
+    padding: 0px;
+    font-family: "Garamond", "Geneva", sans-serif;
+    font-size: 26px;
+    /*noinspection CssInvalidFunction*/
+    color: var(--title-div-bg-color);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: all-petite-caps;
+    text-align: center;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+.writings_content {
+    /*noinspection CssInvalidFunction*/
+    padding: 0px;
+    font-family: "Garamond", "Geneva", sans-serif;
+    font-size: 16px;
+    /*noinspection CssInvalidFunction*/
+    color: var(--title-div-bg-color);
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-align: center;
+    letter-spacing: 2px;
+}

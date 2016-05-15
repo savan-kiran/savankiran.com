@@ -16,6 +16,12 @@ class SecondaryNavBar extends View
     private $layout_type;
     private $active_content;
 
+    public function __construct()
+    {
+        parent::__construct();
+        $this->setLayoutType(SecondaryNavBar::$LAYOUT_TYPE_LINEAR);
+    }
+
     /**
      * set secondary navigation bar contents
      * @param mixed $secondary_nav_bar_contents

@@ -12,7 +12,7 @@ class Head extends View
     {
         ?>
         <head>
-            <link rel="stylesheet" type="text/css" href="css/styles.css">
+            <link rel="stylesheet" type="text/css" href="<?php echo PATH?>css/styles.css">
         </head>
         <?php
     }

@@ -8,16 +8,12 @@
  */
 class HomeModel extends Model
 {
-    public function __construct()
-    {
-        parent::__construct();
-    }
-
     /**
+     * Get my (Savan's) introduction
      * @return bool|mysqli_result
      */
-    public function getContent() {
-        $content = $this->db->query('SELECT description FROM home WHERE id=1');
+    public function getIntroduction() {
+        $content = $this->db->query('SELECT introduction FROM home_page WHERE id=1');
         if(!$content) {
             $content = '';
         } else {

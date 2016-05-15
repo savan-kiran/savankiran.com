@@ -12,14 +12,16 @@ class Controller {
 
     protected $models;
 
-    public function __construct() {
+    public function __construct()
+    {
 
     }
 
     /*
      * Default action when no action is specified for a controller
      */
-    public function defaultAction($queryString = '') {
+    public function defaultAction($queryString = '')
+    {
         // do nothing in parent class
         // inherited classes must override this method to render their respective views
     }
